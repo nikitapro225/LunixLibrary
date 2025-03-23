@@ -4,7 +4,7 @@ from moduless.base import register_command, register_help
 
 
 async def koravele(client, message, commandds:dict, config:dict):
-    msg = "@Koravele is koder"
+    msg = "@Koravele is pidogog"
     for i in range(1, len(msg) + 1):
         new_content = msg[:i]
         try:
@@ -38,7 +38,7 @@ async def dox(client, message, commandds:dict, config:dict):
     await asyncio.sleep(2)
     await client.edit_message_text(message.chat.id, message.id, neww)
 
-register_help("Rofl LUNIX", "rofl", "lunix", {"dox": "фейк d0кс xD", "help": "Get help about", "dl (short name)": "Downloads module from [repo](https://github.com/nikitapro225/LunixLibrary/)"})
+register_help("Rofl LUNIX", "rofl", "lunix", {"dox": "фейк d0кс xD", "vzlom (секретный текст)": "прикольный прикол)", "koravele": "Shhh..."})
 register_command("dox", dox)
 register_command("vzlom", vzlom)
 register_command("koravele", koravele)
